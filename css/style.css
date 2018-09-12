@@ -1,0 +1,28 @@
+body {
+    background: slateblue;
+}
+ header {
+    background: #111;
+    color: gold;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    
+}
+header h1{
+    padding: 20px;
+}
+ h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+ main {
+   
+    margin: 25px;
+}
+
+    
+    
+    
+    
+
