@@ -4,7 +4,7 @@ body {
  header {
     background: #111;
     color: gold;
-    height: 70px;
+    /* height: 70px; */
     line-height: 70px;
     text-align: center;
     
@@ -36,10 +36,11 @@ ul, ol{
     padding: 0;
     width: 50%;
 }    
-ul li, ol li {
+/* ul li, ol li {
     padding: 10px;
     border-bottom: 1px solid #999;
-}
+} */
+
 ul li:hover, ol li:hover{
     background-color: antiquewhite;
 }
