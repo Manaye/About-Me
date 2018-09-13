@@ -12,14 +12,17 @@ else {
 var ageResponse = prompt('Are you 18 years old or older?');
 if(ageResponse.toLowerCase() === 'yes' || ageResponse.toUpperCase() === 'Y'){
   console.log('you are eligible to work!!!');
+  alert('Are you 18 years old or older?');
+  
 }
 else {
   console.log('grow up kiddo!!!');
 }
 
 var something = prompt('did you see something in the sky?');
-if(something.toUpperCase() === 'yes'|| something.toUpperCase() === 'YES'){
+if(something.toUpperCase() === 'yes'|| something.toUpperCase() === 'Y'){
   console.log('i am not imagining!!!');
+  alert('did you see something in the sky?');
 }
 else {
   console.log('i guess i am imagining things!!!');
@@ -29,8 +32,9 @@ else {
 var movies = prompt('Have you seen Beauty and the Beast?');
 if(movies.toLowerCase() === 'no' || movies.toUpperCase()==='NO' ){
   console.log('ohh u miss it!!');
+  alert('Have you seen Beauty and the Beast?');
 }
-else if(movies.toLowerCase() === 'yes' ||movies.toUpperCase()==='YES'){
+else if(movies.toLowerCase() === 'yes' ||movies.toUpperCase()==='Y'){
   console.log('ohh Me too what a nice movie !!');
 }
 else {
@@ -38,7 +42,7 @@ else {
 }
 
 var coding = prompt('do you love coding?');
-if(coding.toLowerCase() === 'yes' || coding.toUpperCase() === 'YES'){
+if(coding.toLowerCase() === 'yes' || coding.toUpperCase() === 'Y'){
   console.log('You might get good job');
 }
 else {
