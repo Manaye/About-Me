@@ -3,22 +3,34 @@
 var userName = prompt('What is your name?');
 alert('Welcome ' + userName + '!');
 
-var response = prompt('Are you married?');
+
+// I need to create a variable that keeps track of correct answers.
+
+
+
+// This is how we want to strucutre the next four questions:
+// We want to write questions that only give back yes or no responses
+// We want provide alerts to let peopole know that they were right or wrong because we then simiply move to the next question
+// We also want to provide console logs that let us know what the user provided in their answers. 
+var response = prompt('Is Hiwot from Ethiopia?');
 if(response.toLowerCase() === 'yes'|| response.toLowerCase() === 'y'){
-  console.log('I hope you had a nice honeymoon');
-  alert('I hope you had a nice honeymoon ' + userName);
+  console.log('User guessed correct!');
+  alert(userName + ' geat job! Yes, I am from Ethiopia');
 }
 else {
-  console.log('then you are a single....!!!');
-  alert('then you are a single....!!!');
+  console.log('User guessed incorrectly' + response);
+  alert('Sorry, you\'re answer is wrong. I am from Ethiopia!');
 }
 
-var ageResponse = prompt('Are you 18 years old or older?');
-if(ageResponse.toLowerCase() === 'yes' || ageResponse.toLowerCase() === 'y'){
+
+
+// follow the structure from above
+var ageResponse = prompt('Is Hiwot\'s favorite color green?');
+if(ageResponse.toLowerCase() === 'no' || ageResponse.toLowerCase() === 'n'){ // alwways put the right answer in the if
   console.log('you are eligible to work!!!');
-  alert('you are eligible to work!!!');
+  alert('You were right!!!');
 }
-else {
+else { // always put the wrong answer in the else
   console.log('grow up kiddo!!!');
   alert('grow up kiddo!!!');
 }
