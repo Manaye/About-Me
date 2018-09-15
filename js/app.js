@@ -58,37 +58,43 @@ else {
   alert('may be you should find something that you love and be good.');
 }
 
+var guessNum = 4;
+var myFavNum = 13;
 
+while(guessNum > 0){
+  var yourGuess = parseInt(prompt('what is my fav number?'));
 
-var counter = 0;
-var maxTries = 3;
-var FavNumber = 13;
-for(var i = 0; i <= 4; i++){
-  var tries = prompt('what is my fav number? choose between 0 & 20');
-  counter+= 1;
-  if(counter> maxTries){
-    alert('you have reached your maximum tries.');
+  if (yourGuess === myFavNum) {
+    alert('guess is correct');
     break;
+
   }
-  if(tries === FavNumber){
-    alert('you won!!!');
-    break;
-  } 
+  if (yourGuess > myFavNum){
+    alert('guess is too high');
+  }
+  if (yourGuess < myFavNum){
+    alert('guess is too low');
+  }
+  
 }
+
+alert('guess out of time');
+
 
 var brandCounter = 0;
 var maxTriesBrand = 6;
 var favBrand = 'Gucci';
-for(i=0;i<=7;i++){
+for(var i = 0; i <= 7; i++){
     
-  tries= prompt('what is my brand?');
-  brandCounter += 1;
-  if(brandCounter> maxTriesBrand){
+  var tries = parseInt(prompt('what is my brand?'));
+  brandCounter+= 1;
+  if(brandCounter > maxTriesBrand){
     alert('you have reached your maximum tries.');
     break;
+
   }
   if(tries === favBrand){
     alert('you won!!!');
-    break;
+    
   } 
 }
