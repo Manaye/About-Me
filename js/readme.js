@@ -60,10 +60,10 @@ else {
 
 var guessNum = 4;
 var myFavNum = 13;
-var guessCounter = 0;
+
 while(guessNum > 0){
   var yourGuess = parseInt(prompt('what is my fav number?'));
-  guessCounter++;
+
   if (yourGuess === myFavNum) {
     alert('guess is correct');
     break;
@@ -75,63 +75,26 @@ while(guessNum > 0){
   if (yourGuess < myFavNum){
     alert('guess is too low');
   }
-  if(guessCounter>3){
-    alert('guess out of time');
-    break;
-  }
   
 }
 
-
-//var statesLived = ['washington', 'california', 'ohio', 'michigan','dallas', 'losangels'];
-var statesHash ={};
-statesHash['washington']='washington';
-statesHash['california']='california';
-statesHash['ohio']='ohio';
-statesHash['michigan']='michigan';
-statesHash['dallas']='dallas';
-statesHash['losangels']='losangels';
-statesHash['atlanta']='atlanta';
-
-var stateTries=0;
-var hashLen =Object.keys(statesHash).length;
-//alert(hashLen);
-var correct = 0;
+alert('guess out of time');
 
 
-  while(stateTries<hashLen){
-      //for(var i=0; i<statesLived.length; i++){
-      var guessState = prompt('which states did i live before?');
-      stateTries++;
-      // var normalizedSate = guessState.toLocaleLowerCase();
-      //var i =0;
-      //var state = statesHash[guessState];
-      //alert(state);
-      if(guessState in statesHash){
-      //if(state!==guessState){
-     correct++;
-      alert('correct');
-      //break;
-      //correct++;
-      //  break;
-      }
-      else{alert('wrong');}
-      //stateTries++;
-     // correct++; 
-    }   
-    alert( 'You got ' + correct + ' out of '+ stateTries + ' correct');
-  
-  
-  
-   
+var brandCounter = 0;
+var maxTriesBrand = 6;
+var favBrand = 'Gucci';
+for(var i = 0; i <= 7; i++){
+    
+  var tries = parseInt(prompt('what is my brand?'));
+  brandCounter+= 1;
+  if(brandCounter > maxTriesBrand){
+    alert('you have reached your maximum tries.');
+    break;
 
-
-
-
-// while(stateTries<6){
-//   var guess = prompt('which states did i live before?');
-//   var r = guessState(guess);
-//   stateTries++;
-  
-// }
-
+  }
+  if(tries === favBrand){
+    alert('you won!!!');
+    
+  } 
+}

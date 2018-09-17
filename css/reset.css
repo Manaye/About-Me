@@ -26,12 +26,14 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+	display: block
 }
 body {
 	line-height: 1;
 }
-
+git error (
+	return than3 character to surch has error type more than 3
+)
 blockquote, q {
 	quotes: none;
 }
